@@ -21,7 +21,7 @@ public class CreateJwtTest {
 				.setSubject("小白")
 				.setIssuedAt(new Date())
 				.setExpiration(new Date(time))
-				.signWith(SignatureAlgorithm.HS256,"itcast");
+				.signWith(SignatureAlgorithm.HS256,"itcast");//hs256算法
 		System.out.println( builder.compact() );
 
 	}
